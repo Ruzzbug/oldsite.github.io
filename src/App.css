@@ -1,0 +1,51 @@
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+html {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #030314;
+  font-size: calc(10px + .3vw);
+  font-family: Mabry,verdana,sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.main {
+  display: block;
+  padding: 5.7rem 0 0;
+  background: #fff;
+
+}
+
+.section {
+  background-color: red;
+}
+
+.container {
+  background-color: antiquewhite;
+  stroke: black;
+  stroke-width: 20px;
+  stroke-opacity: 100%;
+}
+
+.section_header {
+
+}
+
+
+
+@keyframes Some-name {
+  from {
+    /* transform: rotate(0deg); */
+  }
+  to {
+    /* transform: rotate(360deg); */
+  }
+}
