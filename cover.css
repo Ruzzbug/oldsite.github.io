@@ -1,0 +1,137 @@
+/*
+ * Globals
+ */
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+:root {
+
+/* Blue and red */
+  --primary: #181e1f;
+  --head-color: #45858C;
+  --secondary: #b8cfcf;
+  --tertiary: #D9C589;
+  --hover: #D92B04;
+  --text-light: #ebebeb;
+  --text-dark: #1b1b1b;
+
+/* Blue and grey and orange */
+  /* --primary: #3a3a49;
+  --secondary: #1c1c62;
+  --tertiary: #1d70c3;
+  --hover: #a0692a;
+  --text-light: #ebebeb;
+  --text-dark: #1b1b1b; */
+}
+
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  background-color: var(--primary);
+}
+
+.cover-container {
+  max-width: 50rem;
+}
+
+.box:first-child > h3 {
+  margin: auto;
+}
+.box:last-child > nav {
+  margin-left: auto;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  background-color: var(--head-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-bar {
+  margin: 0 0 0 40px;
+  padding: 0;
+  max-width: 90rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+@media (max-width: 600px) {
+  .header-bar {
+    flex-direction: column;
+  }
+}
+
+/* 
+* Logo
+*/
+
+.logo {
+  margin: 5% 0;
+  width: 100%;
+  max-width: 70%;
+  min-width: 300px;
+  /* min-height: 200px; */
+}
+
+.logo-filter {
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+
+  /* #222222 */
+  /* filter: invert(15%) sepia(0%) saturate(1568%) hue-rotate(226deg) brightness(95%) contrast(101%); */
+
+  /* #ffffff */
+  filter: invert(100%);
+}
+
+.socials {
+  background: var(--secondary);
+  border-radius: 15px 15px 0 0;
+  width: auto;
+  padding: 0 5px;
+  display: flex;
+}
+
+
+.socials .icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px 2px 5px;
+  padding: 2.5px 2.5px;
+  border-radius: 2px;
+  background-color: var(--text-dark);
+  fill: var(--tertiary)
+}
+
+
+.socials .icon:hover {
+  fill: var(--text-light);
+  background-color: var(--hover);
+}
+
+.splay-svg {
+  margin-top: auto;
+  width: 28px;
+  height: 28px;
+  fill: var(--secondary);
+}
+/* img {
+    filter: invert(100%);
+} */
