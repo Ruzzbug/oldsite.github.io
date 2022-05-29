@@ -76,7 +76,8 @@
       <!-- profile -->
       <div class="sidebar-profile">
         <img class="round-picture" src="../assets/profile.png" style="width:180px;height:180px;">
-        <div>Words</div>
+        <div><b>Ryan Van Dyk</b></div>
+        <div>VR/UX/3D/Code</div>
         <div class="social-container d-flex">
           <div class="socials d-flex">
             <svg class="icon">
@@ -104,18 +105,18 @@
           </button>
         </li>
 
-        <li class="mb-1">
-          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-            data-bs-target="#projects-collapse" aria-expanded="false">
-            Projects
-          </button>
-          <div class="collapse" id="projects-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#" class="project-link rounded">Lost Reef</a></li>
-              <li><a href="#" class="project-link rounded">Lotus</a></li>
-              <li><a href="#" class="project-link rounded">Acorn Maze Game</a></li>
-            </ul>
-          </div>
+        <li class="mb-1 side-dropdown">
+            <button class="btn btn-toggle align-items-center collapsed" onclick="sideTransition(this)" data-bs-toggle="collapse"
+              data-bs-target="#projects-collapse" aria-expanded="false">
+              Projects
+            </button>
+            <div class="collapse" id="projects-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="project-link rounded">Lost Reef</a></li>
+                <li><a href="#" class="project-link rounded">Lotus</a></li>
+                <li><a href="#" class="project-link rounded">Acorn Maze Game</a></li>
+              </ul>
+            </div>
         </li>
 
         <li class="mb-1">

@@ -92,8 +92,16 @@ main {
 /* Sidebar toggles */
 
 .collapse{
-  background-color: var(--accent);
   color: var(--text-light);
+}
+
+.side-dropdown{
+  background-color: var(--tertiary);
+  transition: background-color 0.2s linear;
+}
+
+.side-dropdown:active{
+  background-color: var(--accent);
 }
 
 .sidebar .project-link {
@@ -120,8 +128,7 @@ main {
 
 .btn-toggle:hover,
 .btn-toggle:focus {
-  color: rgba(0, 0, 0, 0.85);
-  background-color: #d2f4ea;
+  border: 0;
 }
 
 .btn-toggle::before {
@@ -133,7 +140,7 @@ main {
 }
 
 .btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--text-light);
 }
 .btn-toggle[aria-expanded="true"]::before {
   transform: rotate(90deg);
@@ -148,7 +155,7 @@ main {
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-  background-color: #d2f4ea;
+  border: 0;
 }
 
 .scrollarea {
