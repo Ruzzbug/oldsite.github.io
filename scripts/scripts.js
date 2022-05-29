@@ -5,3 +5,11 @@
       new bootstrap.Tooltip(tooltipTriggerEl)
     })
   })()
+
+function sideTransition (element){
+  if(element.ariaExpanded === "false") {
+    element.parentNode.style.backgroundColor = "var(--tertiary)";
+  } else {
+    element.parentNode.style.backgroundColor = "var(--accent)";
+  }
+}
