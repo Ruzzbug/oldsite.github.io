@@ -8,7 +8,9 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="../styling/style.css" rel="stylesheet">
+    <link href="../styling/style.css" rel="stylesheet">
+  <link href="../styling/sidebar.css" rel="stylesheet">
+  <link href="../styling/homepage.css" rel="stylesheet">
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -72,10 +74,10 @@
   <main>
 
     <!-- sidebar -->
-    <div class="flex-shrink-0 p-3 sidebar" style="width: 280px;">
+    <div class="flex-shrink-0 p-3 sidebar">
       <!-- profile -->
       <div class="sidebar-profile">
-        <img class="round-picture" src="../assets/profile.png" style="width:180px;height:180px;">
+        <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
         <div><b>Ryan Van Dyk</b></div>
         <div>VR/UX/3D/Code</div>
         <div class="social-container d-flex">
@@ -95,59 +97,68 @@
 
       </div>
       <!-- links -->
-      <ul class="list-unstyled nav-link-list ps-0">
-        <li class="mb-1">
-          <button href="#" class="btn align-items-center rounded" aria-current="page">
+      <ul class="list-unstyled nav-link-list">
+        <li class="">
+          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg>
             Home
-          </button>
+          </a>
         </li>
 
-        <li class="mb-1 side-dropdown">
-            <button class="btn btn-toggle align-items-center collapsed" onclick="sideTransition(this)" data-bs-toggle="collapse"
-              data-bs-target="#projects-collapse" aria-expanded="false">
-              Projects
-            </button>
-            <div class="collapse" id="projects-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="project-link rounded">Lost Reef</a></li>
-                <li><a href="#" class="project-link rounded">Lotus</a></li>
-                <li><a href="#" class="project-link rounded">Acorn Maze Game</a></li>
-              </ul>
-            </div>
+        <li class="side-dropdown">
+          <a class="sidebar-link btn btn-toggle align-items-center collapsed" onclick="sideTransition(this)"
+            data-bs-toggle="collapse" data-bs-target="#projects-collapse" aria-expanded="false">
+             Projects
+          </a>
+          <div class="collapse" id="projects-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal small">
+              <li>
+                <a href="#" class="sidebar-link project-link">Lost Reef</a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link project-link">Lotus</a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link project-link">Acorn Maze Game</a>
+              </li>
+            </ul>
+          </div>
         </li>
 
-        <li class="mb-1">
-          <button href="#" class="btn align-items-center rounded" aria-current="page">
+        <li class="">
+          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg>
             About
-          </button>
+          </a>
         </li>
-        <li class="mb-1">
-          <button href="#" class="btn align-items-center rounded" aria-current="page">
+        <li class="">
+          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg>
             Resume
-          </button>
+          </a>
         </li>
-        <li class="mb-1">
-          <button href="#" class="btn align-items-center rounded" aria-current="page">
+        <li class="">
+          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
             <svg class="bi me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg>
             Contact
-          </button>
+          </a>
         </li>
       </ul>
     </div>
 
     <!-- content -->
-    <div class="container" id="about">
+    <div class="container-md left-side"></div>
+    <div class="container-sm right-side"></div>
+
+    <!-- <div class="container" id="about">
       <h1>About</h1>
       <div>
         <span class="general-text">
@@ -230,7 +241,7 @@
           </ul>
         </span>
       </div>
-    </div>
+    </div> -->
 
     <!-- dependancy scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
