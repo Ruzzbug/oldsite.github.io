@@ -17,12 +17,10 @@
 }
 
 .left-side {
-  background-color: var(--tertiary); /*delete this*/
   border-right: 2px solid red;
 }
 
 .right-side {
-  background-color: var(--secondary); /*delete this*/
   border-left: 2px solid red;
   overflow-y: scroll;
   flex-wrap: wrap;
@@ -32,6 +30,7 @@
   .right-side {
     height: auto;
     overflow-y: visible;
+    border: 2px solid red;
   }
   .left-side,
   .right-side {

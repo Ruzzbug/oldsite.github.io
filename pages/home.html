@@ -16,10 +16,11 @@
 
 
 <body>
+  <div class="navTog closed" id="navTog" href="javascript:void(0)" onclick="toggleNav()"></div>
   <main>
-
     <!-- sidebar -->
-    <nav class="sidebar">
+    <nav class="sidebar" id="sidebar">
+
       <!-- profile -->
       <div class="sidebar-profile">
         <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
@@ -98,48 +99,107 @@
         </li>
       </ul>
     </nav>
-
     <!-- content -->
-    <div class="content-container">
+    <div class="content-container" id="content-container">
       <div class="left-side">
         <div class="middle-content">
           Middle content
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget rhoncus augue. Sed a risus at odio rhoncus placerat. Fusce in nisl non enim tincidunt efficitur. Praesent pellentesque, enim vitae ullamcorper luctus, enim urna pretium odio, id commodo lectus augue sed turpis. Donec vel mauris at nibh venenatis placerat eget in ligula. Donec vitae sollicitudin elit. Donec congue mi eget purus tincidunt, ut porttitor eros pellentesque. Nam et dui nec tellus faucibus ullamcorper. Donec congue nulla ac eros rutrum sollicitudin.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget rhoncus augue. Sed a risus at odio rhoncus
+          placerat. Fusce in nisl non enim tincidunt efficitur. Praesent pellentesque, enim vitae ullamcorper luctus,
+          enim urna pretium odio, id commodo lectus augue sed turpis. Donec vel mauris at nibh venenatis placerat eget
+          in ligula. Donec vitae sollicitudin elit. Donec congue mi eget purus tincidunt, ut porttitor eros
+          pellentesque. Nam et dui nec tellus faucibus ullamcorper. Donec congue nulla ac eros rutrum sollicitudin.
 
-Nam id diam nibh. Aenean convallis efficitur vestibulum. Pellentesque sit amet ullamcorper mauris. Cras sodales ex non faucibus finibus. Nam molestie ante massa. Integer a erat nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices urna ullamcorper dui ullamcorper finibus. Aenean tincidunt ligula nec orci dignissim elementum. Mauris sit amet cursus lorem, placerat malesuada risus. Fusce justo nulla, volutpat sed viverra eget, porta pharetra lectus. Sed feugiat, turpis a luctus dictum, turpis nisl auctor libero, sit amet vehicula purus lectus at neque.
+          Nam id diam nibh. Aenean convallis efficitur vestibulum. Pellentesque sit amet ullamcorper mauris. Cras
+          sodales ex non faucibus finibus. Nam molestie ante massa. Integer a erat nulla. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices urna ullamcorper dui ullamcorper
+          finibus. Aenean tincidunt ligula nec orci dignissim elementum. Mauris sit amet cursus lorem, placerat
+          malesuada risus. Fusce justo nulla, volutpat sed viverra eget, porta pharetra lectus. Sed feugiat, turpis a
+          luctus dictum, turpis nisl auctor libero, sit amet vehicula purus lectus at neque.
 
-Quisque eget enim ut velit condimentum egestas id in mi. Sed sed purus eget dui cursus gravida id ut urna. Aenean augue nibh, malesuada vitae mi sed, suscipit posuere leo. Praesent a iaculis sapien. Nulla imperdiet faucibus elit, quis mattis dui feugiat mollis. Vestibulum at porttitor purus. Curabitur sapien ex, ultrices sed ligula et, tempus molestie sapien. Suspendisse volutpat vestibulum placerat.
+          Quisque eget enim ut velit condimentum egestas id in mi. Sed sed purus eget dui cursus gravida id ut urna.
+          Aenean augue nibh, malesuada vitae mi sed, suscipit posuere leo. Praesent a iaculis sapien. Nulla imperdiet
+          faucibus elit, quis mattis dui feugiat mollis. Vestibulum at porttitor purus. Curabitur sapien ex, ultrices
+          sed ligula et, tempus molestie sapien. Suspendisse volutpat vestibulum placerat.
 
-Pellentesque gravida dui libero, non lacinia augue imperdiet ut. Nulla pellentesque elit lorem, eu rutrum mauris luctus rutrum. Maecenas nec egestas ligula, eu condimentum est. Cras porttitor mi et lorem mollis, eu condimentum leo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eleifend risus nec arcu pulvinar semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus a neque gravida, luctus neque sit amet, dignissim tellus.
+          Pellentesque gravida dui libero, non lacinia augue imperdiet ut. Nulla pellentesque elit lorem, eu rutrum
+          mauris luctus rutrum. Maecenas nec egestas ligula, eu condimentum est. Cras porttitor mi et lorem mollis, eu
+          condimentum leo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Etiam eleifend risus nec arcu pulvinar semper. Vestibulum ante ipsum primis in faucibus orci
+          luctus et ultrices posuere cubilia curae; Phasellus a neque gravida, luctus neque sit amet, dignissim tellus.
 
-Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus tristique. Vestibulum euismod, dolor eleifend venenatis hendrerit, diam diam feugiat urna, in blandit metus metus non augue. Cras a est non mi aliquet faucibus vitae porttitor nibh. Sed scelerisque consectetur iaculis. Donec ultrices facilisis orci id pharetra. Sed luctus augue neque, sit amet laoreet risus elementum a. Etiam dapibus ipsum sem, id suscipit arcu hendrerit id. Praesent sem mi, rutrum at magna a, lobortis luctus lacus.
+          Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus tristique. Vestibulum
+          euismod, dolor eleifend venenatis hendrerit, diam diam feugiat urna, in blandit metus metus non augue. Cras a
+          est non mi aliquet faucibus vitae porttitor nibh. Sed scelerisque consectetur iaculis. Donec ultrices
+          facilisis orci id pharetra. Sed luctus augue neque, sit amet laoreet risus elementum a. Etiam dapibus ipsum
+          sem, id suscipit arcu hendrerit id. Praesent sem mi, rutrum at magna a, lobortis luctus lacus.
         </div>
       </div>
       <div class="right-side">
         <div class="middle-content">
           Middle content
           Middle content
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget rhoncus augue. Sed a risus at odio rhoncus placerat. Fusce in nisl non enim tincidunt efficitur. Praesent pellentesque, enim vitae ullamcorper luctus, enim urna pretium odio, id commodo lectus augue sed turpis. Donec vel mauris at nibh venenatis placerat eget in ligula. Donec vitae sollicitudin elit. Donec congue mi eget purus tincidunt, ut porttitor eros pellentesque. Nam et dui nec tellus faucibus ullamcorper. Donec congue nulla ac eros rutrum sollicitudin.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget rhoncus augue. Sed a risus at odio rhoncus
+          placerat. Fusce in nisl non enim tincidunt efficitur. Praesent pellentesque, enim vitae ullamcorper luctus,
+          enim urna pretium odio, id commodo lectus augue sed turpis. Donec vel mauris at nibh venenatis placerat eget
+          in ligula. Donec vitae sollicitudin elit. Donec congue mi eget purus tincidunt, ut porttitor eros
+          pellentesque. Nam et dui nec tellus faucibus ullamcorper. Donec congue nulla ac eros rutrum sollicitudin.
 
-Nam id diam nibh. Aenean convallis efficitur vestibulum. Pellentesque sit amet ullamcorper mauris. Cras sodales ex non faucibus finibus. Nam molestie ante massa. Integer a erat nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices urna ullamcorper dui ullamcorper finibus. Aenean tincidunt ligula nec orci dignissim elementum. Mauris sit amet cursus lorem, placerat malesuada risus. Fusce justo nulla, volutpat sed viverra eget, porta pharetra lectus. Sed feugiat, turpis a luctus dictum, turpis nisl auctor libero, sit amet vehicula purus lectus at neque.
+          Nam id diam nibh. Aenean convallis efficitur vestibulum. Pellentesque sit amet ullamcorper mauris. Cras
+          sodales ex non faucibus finibus. Nam molestie ante massa. Integer a erat nulla. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices urna ullamcorper dui ullamcorper
+          finibus. Aenean tincidunt ligula nec orci dignissim elementum. Mauris sit amet cursus lorem, placerat
+          malesuada risus. Fusce justo nulla, volutpat sed viverra eget, porta pharetra lectus. Sed feugiat, turpis a
+          luctus dictum, turpis nisl auctor libero, sit amet vehicula purus lectus at neque.
 
-Quisque eget enim ut velit condimentum egestas id in mi. Sed sed purus eget dui cursus gravida id ut urna. Aenean augue nibh, malesuada vitae mi sed, suscipit posuere leo. Praesent a iaculis sapien. Nulla imperdiet faucibus elit, quis mattis dui feugiat mollis. Vestibulum at porttitor purus. Curabitur sapien ex, ultrices sed ligula et, tempus molestie sapien. Suspendisse volutpat vestibulum placerat.
+          Quisque eget enim ut velit condimentum egestas id in mi. Sed sed purus eget dui cursus gravida id ut urna.
+          Aenean augue nibh, malesuada vitae mi sed, suscipit posuere leo. Praesent a iaculis sapien. Nulla imperdiet
+          faucibus elit, quis mattis dui feugiat mollis. Vestibulum at porttitor purus. Curabitur sapien ex, ultrices
+          sed ligula et, tempus molestie sapien. Suspendisse volutpat vestibulum placerat.
 
-Pellentesque gravida dui libero, non lacinia augue imperdiet ut. Nulla pellentesque elit lorem, eu rutrum mauris luctus rutrum. Maecenas nec egestas ligula, eu condimentum est. Cras porttitor mi et lorem mollis, eu condimentum leo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eleifend risus nec arcu pulvinar semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus a neque gravida, luctus neque sit amet, dignissim tellus.
+          Pellentesque gravida dui libero, non lacinia augue imperdiet ut. Nulla pellentesque elit lorem, eu rutrum
+          mauris luctus rutrum. Maecenas nec egestas ligula, eu condimentum est. Cras porttitor mi et lorem mollis, eu
+          condimentum leo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Etiam eleifend risus nec arcu pulvinar semper. Vestibulum ante ipsum primis in faucibus orci
+          luctus et ultrices posuere cubilia curae; Phasellus a neque gravida, luctus neque sit amet, dignissim tellus.
 
-Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus tristique. Vestibulum euismod, dolor eleifend venenatis hendrerit, diam diam feugiat urna, in blandit metus metus non augue. Cras a est non mi aliquet faucibus vitae porttitor nibh. Sed scelerisque consectetur iaculis. Donec ultrices facilisis orci id pharetra. Sed luctus augue neque, sit amet laoreet risus elementum a. Etiam dapibus ipsum sem, id suscipit arcu hendrerit id. Praesent sem mi, rutrum at magna a, lobortis luctus lacus.
-        
-Middle content
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget rhoncus augue. Sed a risus at odio rhoncus placerat. Fusce in nisl non enim tincidunt efficitur. Praesent pellentesque, enim vitae ullamcorper luctus, enim urna pretium odio, id commodo lectus augue sed turpis. Donec vel mauris at nibh venenatis placerat eget in ligula. Donec vitae sollicitudin elit. Donec congue mi eget purus tincidunt, ut porttitor eros pellentesque. Nam et dui nec tellus faucibus ullamcorper. Donec congue nulla ac eros rutrum sollicitudin.
+          Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus tristique. Vestibulum
+          euismod, dolor eleifend venenatis hendrerit, diam diam feugiat urna, in blandit metus metus non augue. Cras a
+          est non mi aliquet faucibus vitae porttitor nibh. Sed scelerisque consectetur iaculis. Donec ultrices
+          facilisis orci id pharetra. Sed luctus augue neque, sit amet laoreet risus elementum a. Etiam dapibus ipsum
+          sem, id suscipit arcu hendrerit id. Praesent sem mi, rutrum at magna a, lobortis luctus lacus.
 
-Nam id diam nibh. Aenean convallis efficitur vestibulum. Pellentesque sit amet ullamcorper mauris. Cras sodales ex non faucibus finibus. Nam molestie ante massa. Integer a erat nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices urna ullamcorper dui ullamcorper finibus. Aenean tincidunt ligula nec orci dignissim elementum. Mauris sit amet cursus lorem, placerat malesuada risus. Fusce justo nulla, volutpat sed viverra eget, porta pharetra lectus. Sed feugiat, turpis a luctus dictum, turpis nisl auctor libero, sit amet vehicula purus lectus at neque.
+          Middle content
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget rhoncus augue. Sed a risus at odio rhoncus
+          placerat. Fusce in nisl non enim tincidunt efficitur. Praesent pellentesque, enim vitae ullamcorper luctus,
+          enim urna pretium odio, id commodo lectus augue sed turpis. Donec vel mauris at nibh venenatis placerat eget
+          in ligula. Donec vitae sollicitudin elit. Donec congue mi eget purus tincidunt, ut porttitor eros
+          pellentesque. Nam et dui nec tellus faucibus ullamcorper. Donec congue nulla ac eros rutrum sollicitudin.
 
-Quisque eget enim ut velit condimentum egestas id in mi. Sed sed purus eget dui cursus gravida id ut urna. Aenean augue nibh, malesuada vitae mi sed, suscipit posuere leo. Praesent a iaculis sapien. Nulla imperdiet faucibus elit, quis mattis dui feugiat mollis. Vestibulum at porttitor purus. Curabitur sapien ex, ultrices sed ligula et, tempus molestie sapien. Suspendisse volutpat vestibulum placerat.
+          Nam id diam nibh. Aenean convallis efficitur vestibulum. Pellentesque sit amet ullamcorper mauris. Cras
+          sodales ex non faucibus finibus. Nam molestie ante massa. Integer a erat nulla. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultrices urna ullamcorper dui ullamcorper
+          finibus. Aenean tincidunt ligula nec orci dignissim elementum. Mauris sit amet cursus lorem, placerat
+          malesuada risus. Fusce justo nulla, volutpat sed viverra eget, porta pharetra lectus. Sed feugiat, turpis a
+          luctus dictum, turpis nisl auctor libero, sit amet vehicula purus lectus at neque.
 
-Pellentesque gravida dui libero, non lacinia augue imperdiet ut. Nulla pellentesque elit lorem, eu rutrum mauris luctus rutrum. Maecenas nec egestas ligula, eu condimentum est. Cras porttitor mi et lorem mollis, eu condimentum leo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eleifend risus nec arcu pulvinar semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus a neque gravida, luctus neque sit amet, dignissim tellus.
+          Quisque eget enim ut velit condimentum egestas id in mi. Sed sed purus eget dui cursus gravida id ut urna.
+          Aenean augue nibh, malesuada vitae mi sed, suscipit posuere leo. Praesent a iaculis sapien. Nulla imperdiet
+          faucibus elit, quis mattis dui feugiat mollis. Vestibulum at porttitor purus. Curabitur sapien ex, ultrices
+          sed ligula et, tempus molestie sapien. Suspendisse volutpat vestibulum placerat.
 
-Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus tristique. Vestibulum euismod, dolor eleifend venenatis hendrerit, diam diam feugiat urna, in blandit metus metus non augue. Cras a est non mi aliquet faucibus vitae porttitor nibh. Sed scelerisque consectetur iaculis. Donec ultrices facilisis orci id pharetra. Sed luctus augue neque, sit amet laoreet risus elementum a. Etiam dapibus ipsum sem, id suscipit arcu hendrerit id. Praesent sem mi, rutrum at magna a, lobortis luctus lacus.
-        
+          Pellentesque gravida dui libero, non lacinia augue imperdiet ut. Nulla pellentesque elit lorem, eu rutrum
+          mauris luctus rutrum. Maecenas nec egestas ligula, eu condimentum est. Cras porttitor mi et lorem mollis, eu
+          condimentum leo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Etiam eleifend risus nec arcu pulvinar semper. Vestibulum ante ipsum primis in faucibus orci
+          luctus et ultrices posuere cubilia curae; Phasellus a neque gravida, luctus neque sit amet, dignissim tellus.
+
+          Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus tristique. Vestibulum
+          euismod, dolor eleifend venenatis hendrerit, diam diam feugiat urna, in blandit metus metus non augue. Cras a
+          est non mi aliquet faucibus vitae porttitor nibh. Sed scelerisque consectetur iaculis. Donec ultrices
+          facilisis orci id pharetra. Sed luctus augue neque, sit amet laoreet risus elementum a. Etiam dapibus ipsum
+          sem, id suscipit arcu hendrerit id. Praesent sem mi, rutrum at magna a, lobortis luctus lacus.
+
 
         </div>
       </div>
@@ -237,6 +297,12 @@ Curabitur a leo eu justo iaculis porttitor ut a ligula. Aliquam tincidunt luctus
       crossorigin="anonymous"></script>
   </main>
   <script src="../scripts/scripts.js"></script>
+
+
+
+  <script>
+    
+  </script>
 </body>
 
 </html>

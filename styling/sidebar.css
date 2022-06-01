@@ -12,6 +12,7 @@
   height: 100vh;
   padding: 0;
   flex-shrink: 0;
+  overflow-x: hidden;
 }
 /* TODO MEDIA QUERY FOR WHEN PAGE IS SHORT */
 .round-picture {
@@ -67,6 +68,8 @@
   width: 100%;
   color: var(--text-dark);
   text-align: center;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 .project-link {
@@ -151,14 +154,60 @@
   }
 }
 
-/* @media screen and (max-width: 1600px) {
-  .sidebar {
-    width: 185px;
-  }
-} */
-
 @media screen and (max-width: 800px) {
   .sidebar {
-    /* width: 280px; */
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s;
+  }
+}
+
+/* MOBILE BUTTONS */
+
+.navTog {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  position: fixed;
+  display: none;
+  top: 10px;
+  overflow-y: hidden;
+  left: 8px;
+  z-index: 2;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: .4s ease;
+  border-radius: 10px;
+}
+
+.navTog::after {
+  content: "☰";
+  padding: 0 2px;
+  
+}
+
+.navTog.opened::after {
+  content: "➔";
+}
+
+@media screen and (max-width: 800px) {
+  .navTog {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 0% 10px;
+    padding-bottom: 3px;
+    
+  }
+  .navTog.closed{
+  background-color: #fff8;
+  border: solid 2px var(--accent);
+  transition: .1s;
   }
 }
