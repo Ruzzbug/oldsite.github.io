@@ -1,10 +1,41 @@
 :root {
-  --primary: #fafafa;
-  --secondary: #c3c3c3;
-  --tertiary: #4fa1f4;
-  --hover: #19518a;
-  --accent: #535353;
-  --text-light: #ebebeb;
-  --text-dark: #1b1b1b;
+  --homepage-split: 50%;
 }
 
+/* Even Split Page */
+
+.left-side,
+.right-side {
+  /* flex: 1; */
+  /* max-width: 800px; */
+  width: 100%;
+  height: 90%;
+  /* padding: 200px 0; */
+  max-width: 700px;
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.left-side {
+  background-color: var(--tertiary); /*delete this*/
+  border-right: 2px solid red;
+}
+
+.right-side {
+  background-color: var(--secondary); /*delete this*/
+  border-left: 2px solid red;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px) {
+  .right-side {
+    height: auto;
+    overflow-y: visible;
+  }
+  .left-side,
+  .right-side {
+    max-width: 100%;
+    border: none;
+  }
+}

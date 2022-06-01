@@ -1,13 +1,4 @@
 :root {
-  /* White and blue */
-  --primary: #fafafa;
-  --secondary: #c3c3c3;
-  --tertiary: #4fa1f4;
-  --hover: #19518a;
-  --accent: #535353;
-  --text-light: #ebebeb;
-  --text-dark: #1b1b1b;
-
   --sidebar-width: 280px;
 }
 
@@ -19,6 +10,8 @@
   text-align: center;
   width: var(--sidebar-width);
   height: 100vh;
+  padding: 0;
+  flex-shrink: 0;
 }
 /* TODO MEDIA QUERY FOR WHEN PAGE IS SHORT */
 .round-picture {
@@ -46,8 +39,13 @@
   background-color: var(--primary);
 }
 
+.sideico {
+  width: 1em;
+  height: 1em;
+}
+
 .nav-link-list {
-  width: var(--sidebar-width);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +74,7 @@
   display: block;
   font-weight: 470;
   padding: 0.1rem;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .sidebar-link:hover {
@@ -84,7 +82,7 @@
   color: var(--text-dark);
 }
 
-.project-link:hover  {
+.project-link:hover {
   color: var(--text-dark);
 }
 
@@ -98,7 +96,8 @@
   outline: 0;
 }
 
-.btn, .btn-toggle {
+.btn,
+.btn-toggle {
   transition: color 0s;
   border-radius: 0px;
   border-width: 0;
@@ -128,7 +127,8 @@
   color: var(--text-light);
 }
 
-.btn, .btn-toggle[aria-expanded="true"]:hover {
+.btn,
+.btn-toggle[aria-expanded="true"]:hover {
   color: var(--text-dark);
 }
 
@@ -136,12 +136,29 @@
   transform: rotate(90deg);
 }
 
-.btn-toggle-nav li:last-child a{
+.btn-toggle-nav li:last-child a {
   padding-bottom: 0.25rem;
 }
-
 
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
   border: 0;
+}
+
+@media screen and (max-width: 1680px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+
+/* @media screen and (max-width: 1600px) {
+  .sidebar {
+    width: 185px;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    /* width: 280px; */
+  }
 }
