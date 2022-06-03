@@ -72,12 +72,17 @@
   white-space: nowrap;
 }
 
+.sidebar-link.btn{
+  font-size: larger;
+}
+
+
 .project-link {
   color: var(--text-light);
   display: block;
   font-weight: 470;
   padding: 0.1rem;
-  font-size: 0.95rem;
+  font-size: large;
 }
 
 .sidebar-link:hover {
@@ -209,5 +214,9 @@
   background-color: #fff8;
   border: solid 2px var(--accent);
   transition: .1s;
+  }
+  .round-picture {
+    margin: 8vh 0 0 0;
+    border-radius: 100%;
   }
 }
