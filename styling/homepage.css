@@ -2,9 +2,17 @@
   --homepage-split: 50%;
 }
 
+
+.content-container{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  
+  /* width: calc(100vw - var(--sidebar-width)); */
+}
+
 /* Even Split Page */
-
-
 .left-side {
   padding-left: 70px;
   padding-right: 20px;
@@ -17,21 +25,31 @@
 }
 
 .logo {
-  fill: var(--tertiary);
+  fill: rgb(var(--tertiary));
   display: block;
-  margin: -40px auto 60px auto;
+  margin: 0 auto 5vh auto;
+  /* margin: -40px auto 60px auto; */
   width: 300px;
   height: 300px;
-  filter: 
-    drop-shadow(-1px -1px 0px var(--accent)) 
-    drop-shadow(2px -1px 0px var(--accent)) 
-    drop-shadow(2px 2px 0px var(--accent))
-    drop-shadow(-1px 2px 0px var(--accent))
+  filter: drop-shadow(-1px -1px 0px rgb(var(--accent)))
+    drop-shadow(2px -1px 0px rgb(var(--accent)))
+    drop-shadow(2px 2px 0px rgb(var(--accent)))
+    drop-shadow(-1px 2px 0px rgb(var(--accent)));
 }
 
-
 .pcard-container {
+  display: block;
   height: 219px;
+  margin: 20px 10px;
+  background-color: transparent;
+  /* border-bottom: 4px solid rgba(var(--accent), 0.8); */
+
+}
+
+.bottom-line {
+  width:400px;
+  border-bottom: 4px solid rgba(var(--accent), 0.8);
+  margin: auto;
 }
 
 #lt-card {
@@ -39,16 +57,34 @@
   /* box-shadow: inset 0px 0px 10px 10px black; */
 }
 
-
+.project-cards-holder{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
 @media screen and (max-width: 1280px) {
-  .right-side {
-    border: 2px solid red;
-  }
+  
+  
   .left-side,
   .right-side {
+    justify-content: center;
     height: fit-content;
     max-width: 100%;
+    margin: 0 auto;
     border: none;
+    margin: auto;
   }
+  .bottom-line {
+    width: 0;
+    height: 0;
+  }
+  
+  .pcard-container {
+    height: 219px;
+    width: 400px;
+    margin: 20px 0;
+  }
+  
 }

@@ -45,7 +45,7 @@
       <!-- links -->
       <ul class="list-unstyled nav-link-list">
         <li class="">
-          <a href="#" class="sidebar-link btn align-items-center active" aria-current="page">
+          <a class="sidebar-link btn align-items-center active" aria-current="page">
             <svg class="bi me-2 sideico">
               <use href="../assets/home.svg#home" />
             </svg>
@@ -54,35 +54,38 @@
         </li>
 
         <li class="side-dropdown">
-          <a class="sidebar-link btn btn-toggle align-items-center collapsed" onclick="sideTransition(this)"
+          <a class="sidebar-link btn btn-toggle align-items-center collapsed" id="side-dropdown-toggle" onclick="sideTransition(this)"
             data-bs-toggle="collapse" data-bs-target="#projects-collapse" aria-expanded="false">
              Projects
           </a>
           <div class="collapse" id="projects-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal small">
               <li>
-                <a href="#" class="sidebar-link project-link">Lost Reef</a>
+                <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
               </li>
               <li>
-                <a href="#" class="sidebar-link project-link">Lotus</a>
+                <a href="lotus.html" class="sidebar-link project-link">Lotus</a>
               </li>
               <li>
-                <a href="#" class="sidebar-link project-link">Acorn Maze Game</a>
+                <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
+              </li>
+              <li>
+                <a href="virtual-dystopia.html" class="sidebar-link project-link">Virtual Dystopia</a>
               </li>
             </ul>
           </div>
         </li>
 
         <li class="">
-          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#home" />
+          <a href="about.html" class="sidebar-link btn align-items-center " aria-current="page">
+            <svg class="bi me-2 sideico">
+              <use href="../assets/person.svg#person" />
             </svg>
             About
           </a>
         </li>
         <li class="">
-          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
+          <a href="resume.html" class="sidebar-link btn align-items-center " aria-current="page">
             <svg class="bi me-2 sideico">
               <use href="../assets/file-earmark-text.svg#text-doc" />
             </svg>
@@ -90,37 +93,51 @@
           </a>
         </li>
         <li class="">
-          <a href="#" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#home" />
+          <a href="contact.html" class="sidebar-link btn align-items-center " aria-current="page">
+            <svg class="bi me-2 sideico">
+              <use href="../assets/envelope.svg#envelope" />
             </svg>
             Contact
           </a>
         </li>
       </ul>
     </nav>
+
+
     <!-- content -->
     <div class="content-container" id="content-container">
-      
+
       <div class="left-side">
-        
+
         <div class="middle-content">
-          <svg class="logo"><use href="../assets/rdLogo.svg#rdLogo" /></svg>
+          <svg class="logo">
+            <use href="../assets/rdLogo.svg#rdLogo" />
+          </svg>
           <p>Designer, programmer, project manager and VR enthusiast</p>
           <p>I'm always looking for exciting opportunities, feel free to <a>contact me</a></p>
           <br>
           <p>Currently looking for work</p>
-          
+
         </div>
       </div>
       <div class="right-side">
+
         <div class="middle-content">
-          <h1>Projects</h1>
-          <div class="pcard-container">
-            <img class="project-card" id="lr-card" src="../assets/lr-card.png" alt="Lost Reef card"></img>
-          </div>
-          <div class="pcard-container">
-            <img class="project-card" id="lt-card" src="../assets/lotus-card.png" alt="lotus project card"></img>
+          <h1><u>Projects</u></h1>
+          <div class="project-cards-holder">
+            <div>
+              <div class="pcard-container">
+                <img class="project-card" id="lr-card" src="../assets/lr-card.png" alt="Lost Reef card"></img>
+              </div>
+              <div class="bottom-line"></div>
+            </div>
+            <div>
+              <div class="pcard-container">
+                <img class="project-card" id="lt-card" src="../assets/lotus-card.png" alt="lotus project card"></img>
+              </div>
+              <div class="bottom-line"></div>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+let open = false;
+
 (function () {
   "use strict";
   var tooltipTriggerList = [].slice.call(
@@ -6,6 +8,11 @@
   tooltipTriggerList.forEach(function (tooltipTriggerEl) {
     new bootstrap.Tooltip(tooltipTriggerEl);
   });
+  let sidebarToggle = document.getElementById("side-dropdown-toggle");
+  if (sidebarToggle.ariaExpanded === "true") {
+    sidebarToggle.parentNode.style.backgroundColor = "rgb(var(--accent))";
+    open = true;
+  }
 })();
 
 //Change colour on dropdown
@@ -14,17 +21,17 @@ function sideTransition(element) {
     element.parentNode.style.removeProperty("background-color");
     return;
   }
-  element.parentNode.style.backgroundColor = "var(--accent)";
+  element.parentNode.style.backgroundColor = "rgb(var(--accent))";
   return;
 }
 
-var open = false;
+
 //Open and close sidebar
 function toggleNav() {
   if (open) {
     document.getElementById("sidebar").style.width = "0";
     document.getElementById("content-container").style.filter = "none";
-    document.body.style.backgroundColor = "var(--primary)";
+    document.body.style.backgroundColor = "rgb(var(--primary))";
     document.getElementById("navTog").classList.remove("opened");
     document.getElementById("navTog").classList.add("closed");
     open = false;
@@ -36,13 +43,17 @@ function toggleNav() {
   document.body.style.backgroundColor = "#888888"; //should use a div that's above to also darken images
   document.getElementById("navTog").classList.remove("closed");
   document.getElementById("navTog").classList.add("opened");
-  document.getElementById("content-container").addEventListener("click", onClickOutside);
-  open = true;  
+  document
+    .getElementById("content-container")
+    .addEventListener("click", onClickOutside);
+  open = true;
 }
 
 const onClickOutside = (e) => {
   if (!e.target.className.includes("sidebar")) {
-    document.getElementById("content-container").removeEventListener("click", onClickOutside);
+    document
+      .getElementById("content-container")
+      .removeEventListener("click", onClickOutside);
     toggleNav();
   }
 };

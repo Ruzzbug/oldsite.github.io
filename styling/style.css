@@ -17,22 +17,33 @@
     --text-dark: #1b1b1b; */
 
   /* White and blue */
-  --primary: #fafafa;
-  --secondary: #c3c3c3;
+  --primary: 250, 249, 247;
+  --secondary: 194, 194, 194;
+  --tertiary: 79, 161, 244;
+  --hover: 25, 81, 138;
+  --accent: 83, 83, 83;
+  --text-light: 235, 235, 235;
+  --text-dark: 27, 27, 27;
+
+
+  /* black and blue */
+  /* --primary: rgb(4, 45, 117);
+  --secondary: #4d7ea1;
   --tertiary: #4fa1f4;
   --hover: #19518a;
-  --accent: #535353;
-  --text-light: #ebebeb;
-  --text-dark: #1b1b1b;
+  --accent: #afc4f1;
+  --text-dark: #ebebeb;
+  --text-light: #1b1b1b; */
 
   --collapse-1: 1280px;
 }
 
 body {
-  /* min-height: 100vh; */
   min-height: -webkit-fill-available;
-  background-color: var(--primary);
-  transition: background-color .4s, filter .4s;
+  background-color: rgb(var(--primary));
+  /* background-color: white; */
+
+  /* filter: invert(); */
 }
 
 html {
@@ -47,37 +58,53 @@ main {
   max-height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
+  
 }
 
 .content-container{
-  display: flex;
+  
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  padding: 2.5% 0;
+  /* margin-top: 10%; */
+  
+  /* justify-content: center; */
+  /* align-items: center; */
   
   /* width: calc(100vw - var(--sidebar-width)); */
 }
 
 .middle-content {
   align-items: center;
+  /* width: 80%; */
+  margin: 0 auto;
 }
 
+.content-container.middle-content {
+  padding: 40px 80px 0 80px;
+  max-width: 1300px;
+  overflow-y: auto;
+}
+
+.general-text {
+  margin-right:20px;
+}
 .left-side,
 .right-side {
   width: 100%;
-  height: 90%;
+  height: 100%;
+  margin: 2.5% 0;
   display: flex;
-  max-width: 700px;
-  padding: 20px;
+  /* padding: 20px; */
   align-items: center;
 }
 
 .left-side {
-  border-right: 2px solid red;
+  border-right: 2px solid rgba(var(--accent), 0.8);
+  max-width: 700px;
 }
 
 .right-side {
-  border-left: 2px solid red;
+  border-left: 2px solid rgba(var(--accent), 0.8);
   overflow-y: auto;
   flex-wrap: wrap;
 }
@@ -85,30 +112,39 @@ main {
 .pcard-container {
   display: flex;
   align-items: center;
+  width: 400px;
 }
 
 .project-card {
-  width: 100%;
+  width: 380px;
+  border-radius: 50px;
   max-width: 400px;
-  padding: 10px 10px 10px 10px;
+  margin: auto;
+  /* padding: 10px 10px 10px 10px; */
   /* vertical-align: middle; */
-  transition: padding .5s;
+  transition:  width .5s;
+  box-shadow: 0 30px 20px -20px rgba(var(--accent), 0.8);
+}
+
+#lr-card {
+  background-color: rgba(0, 0, 0, .47);
 }
 
 .project-card:hover {
-  padding: 0;
+  margin: auto;
+  width: 400px;
 }
 
 
 
 @media screen and (max-width: 1280px) {
   .content-container {
-    padding-top: 70px;
     max-width: 100%;
     justify-content: start;
     flex-direction: column;
     margin: 0 auto;
     overflow-y: auto;
+    padding-top: 80px;
   }
   .right-side {
     /* overflow-y: visible; */
@@ -116,11 +152,19 @@ main {
   }
   .left-side,
   .right-side {
+    overflow-y: visible;
     height: fit-content;
     max-width: 100%;
     border: none;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 10px 10px 10px;
+    /* vertical-align: middle; */
+    transition: padding .5s;
   }
 }
 
@@ -156,5 +200,5 @@ a.active{
 .icon {
   width: 1em;
   height: 1em;
-  fill: var(--tertiary)
+  fill: rgb(var(--tertiary))
 }
