@@ -28,7 +28,8 @@ function sideTransition(element) {
 //Open and close sidebar
 function toggleNav() {
   if (open) {
-    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("sidebar").style.removeProperty("width");
+    console.log("REMOVE")
     document.getElementById("content-container").style.filter = "none";
     document.body.style.backgroundColor = "rgb(var(--primary))";
     document.getElementById("navTog").classList.remove("opened");
