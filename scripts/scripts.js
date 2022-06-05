@@ -11,7 +11,6 @@ let open = false;
   let sidebarToggle = document.getElementById("side-dropdown-toggle");
   if (sidebarToggle.ariaExpanded === "true") {
     sidebarToggle.parentNode.style.backgroundColor = "rgb(var(--accent))";
-    open = true;
   }
 })();
 
