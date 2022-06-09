@@ -40,14 +40,37 @@
 .pcard-container {
   display: block;
   height: 219px;
-  margin: 20px 10px;
+  margin: 30px 10px 0px 10px;
   background-color: transparent;
   /* border-bottom: 4px solid rgba(var(--accent), 0.8); */
+}
 
+.project-card {
+  width: 380px;
+  position: relative;
+  margin: auto;
+  bottom: -5px;
+  transition:  width .25s, height .25s, box-shadow .15s, background-color .2s, bottom .25s;
+  box-shadow: 0 30px 20px -20px rgba(var(--accent), 0.8);
+}
+
+.project-card:hover {
+  margin: auto;
+  width: 400px;
+  bottom: 8px;
+  box-shadow: 0 30px 20px -20px rgba(var(--accent), 0.8), 0 0 8px 4px rgba(var(--accent), 0.8);
+}
+
+.vr-card {
+  background-color: rgba(0, 0, 0, .47);
+}
+
+.vr-card:hover {
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .bottom-line {
-  width:400px;
+  width:380px;
   border-bottom: 4px solid rgba(var(--accent), 0.8);
   margin: auto;
 }
@@ -73,18 +96,18 @@
     padding: 0 15px 0 15px;
   }
   .bottom-line {
-    width: 0;
-    height: 0;
+    width: 90%;
+    /* height: 0; */
   }
   
   .pcard-container {
     height: 219px;
     width: 400px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
   
 }
-
+/* asd */
 
 @media screen and (max-width: 417px) {
   .project-cards-holder {
@@ -95,17 +118,22 @@
   .pcard-container {
     width: auto;
     height: 42vw;
+    margin: 10px 5px;
     /* border-radius: 5px; */
   }
   .project-card {
     width: auto;
     height: 40vw;
+    bottom: -2px;
     border-radius: auto ;
   }
 
   .project-card:hover {
-    height: 42vw;
     width: auto;
+    height: 40vw;
+    bottom: -2px;
+    border-radius: auto ;
+
   }
 
   .logo{
