@@ -3,6 +3,9 @@
 }
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   background-color: rgb(var(--secondary));
   align-items: center;
