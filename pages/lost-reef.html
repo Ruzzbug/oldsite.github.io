@@ -10,13 +10,18 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="../styling/style.css" rel="stylesheet">
   <link href="../styling/sidebar.css" rel="stylesheet">
+  <link href="../styling/projects.css" rel="stylesheet">
+  <!-- <link href="../styling/projects.css" rel="stylesheet"> -->
   <title>Ryan Van Dyk</title>
 </head>
 
 
 <body>
   <div class="navTog closed" id="navTog" href="javascript:void(0)" onclick="toggleNav()"></div>
+  <div class="bg-image" style="background-image: url('../assets/ripple.jpg'); background-size: cover; filter: blur(8px);
+    -webkit-filter: blur(8px); position: absolute; left:0; top: 0; width: 100vw; height: 100vh; z-index: -1;"></div>
   <main>
+
 
     <!-- sidebar -->
     <nav class="sidebar" id="sidebar">
@@ -28,15 +33,21 @@
         <div>VR/UX/3D/Code</div>
         <div class="social-container d-flex">
           <div class="socials d-flex">
-            <svg class="icon">
-              <use href="../assets/linkedin.svg#linkedin" />
-            </svg>
-            <svg class="icon">
-              <use href="../assets/github.svg#github" />
-            </svg>
-            <svg class="icon">
-              <use href="../assets/behance.svg#behance" />
-            </svg>
+            <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
+              <svg class="icon">
+                <use href="../assets/linkedin.svg#linkedin" />
+              </svg>
+            </a>
+            <a href="https://github.com/Ruzzbug" target="_blank">
+              <svg class="icon">
+                <use href="../assets/github.svg#github" />
+              </svg>
+            </a>
+            <a href="https://www.behance.net/ryanvandyk" target="_blank">
+              <svg class="icon">
+                <use href="../assets/behance.svg#behance" />
+              </svg>
+            </a>
           </div>
 
         </div>
@@ -106,8 +117,29 @@
 
 
     <div class="content-container" id="content-container">
-      <h1>Lost Reef</h1>
+      <div class="middle-content">
+        <h1 style="display: inline;">Lost Reef </h1> - A virtual reality project for the Oculus Quest 2 <br><br>
+        <div class="pcard-container">
+          <img class="project-card vr-card" id="lr-card" src="../assets/lr-card.png" alt="Lost Reef card"></img> <div>
+          <h5>Role(s)</h5>
+
+          <p>Ya yeet</p>
+          <h5>Software</h5>
+          <p>Ya yeet</p>
+          <div class="project-links">
+            <button class="p-btn"  target="_blank"> <!--href="https://github.com/Ruzzbug"-->
+                <svg class="icon"><use href="../assets/github.svg#github" /></svg>
+              github
+            </button>
+            <button class="p-btn">⇩ download</button>
+          </div>
+        </div>
+        </div>
+       
+      </div>
+
     </div>
+
 
 
 
