@@ -10,110 +10,186 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="../styling/style.css" rel="stylesheet">
   <link href="../styling/sidebar.css" rel="stylesheet">
+  <link href="../styling/projects.css" rel="stylesheet">
   <title>Ryan Van Dyk</title>
 </head>
 
 
 <body>
   <div class="navTog closed" id="navTog" href="javascript:void(0)" onclick="toggleNav()"></div>
-  <main>
 
-    <!-- sidebar -->
-    <nav class="sidebar" id="sidebar">
+  <!-- sidebar -->
+  <nav class="sidebar" id="sidebar">
 
-      <!-- profile -->
-      <div class="sidebar-profile">
-        <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
-        <div><b>Ryan Van Dyk</b></div>
-        <div>VR/UX/3D/Code</div>
-        <div class="social-container d-flex">
-          <div class="socials d-flex">
-            <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
-              <svg class="icon">
-                <use href="../assets/linkedin.svg#linkedin" />
-              </svg>
-            </a>
-            <a href="https://github.com/Ruzzbug" target="_blank">
-              <svg class="icon">
-                <use href="../assets/github.svg#github" />
-              </svg>
-            </a>
-            <a href="https://www.behance.net/ryanvandyk" target="_blank">
-              <svg class="icon">
-                <use href="../assets/behance.svg#behance" />
-              </svg>
-            </a>
-          </div>
-
+    <!-- profile -->
+    <div class="sidebar-profile">
+      <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
+      <div><b>Ryan Van Dyk</b></div>
+      <div>VR/UX/3D/Code</div>
+      <div class="social-container d-flex">
+        <div class="socials d-flex">
+          <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
+            <svg class="icon">
+              <use href="../assets/linkedin.svg#linkedin" />
+            </svg>
+          </a>
+          <a href="https://github.com/Ruzzbug" target="_blank">
+            <svg class="icon">
+              <use href="../assets/github.svg#github" />
+            </svg>
+          </a>
+          <a href="https://www.behance.net/ryanvandyk" target="_blank">
+            <svg class="icon">
+              <use href="../assets/behance.svg#behance" />
+            </svg>
+          </a>
         </div>
 
       </div>
-      <!-- links -->
-      <ul class="list-unstyled nav-link-list">
-        <li class="">
-          <a href="home.html" class="sidebar-link btn align-items-center" aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/home.svg#home" />
-            </svg>
-            Home
-          </a>
-        </li>
 
-        <li class="side-dropdown">
-          <a class="sidebar-link btn btn-toggle align-items-center" id="side-dropdown-toggle"
-            onclick="sideTransition(this)" data-bs-toggle="collapse" data-bs-target="#projects-collapse"
-            aria-expanded="true">
-             Projects
-          </a>
-          <div class="collapse show" id="projects-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal small">
-              <li>
-                <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
-              </li>
-              <li>
-                <a href="lotus.html" class="sidebar-link project-link">Lotus</a>
-              </li>
-              <li>
-                <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
-              </li>
-              <li>
-                <a href="virtual-dystopia.html" class="sidebar-link project-link active">Virtual Dystopia</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="">
-          <a href="about.html" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/person.svg#person" />
-            </svg>
-            About
-          </a>
-        </li>
-        <li class="">
-          <a href="resume.html" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/file-earmark-text.svg#text-doc" />
-            </svg>
-            Resume
-          </a>
-        </li>
-        <li class="">
-          <a href="contact.html" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/envelope.svg#envelope" />
-            </svg>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-
-    <div class="content-container" id="content-container">
-      <h1>Virtual Dystopia</h1>
     </div>
+    <!-- links -->
+    <ul class="list-unstyled nav-link-list">
+      <li class="">
+        <a href="home.html" class="sidebar-link btn align-items-center" aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/home.svg#home" />
+          </svg>
+          Home
+        </a>
+      </li>
+
+      <li class="side-dropdown">
+        <a class="sidebar-link btn btn-toggle align-items-center" id="side-dropdown-toggle"
+          onclick="sideTransition(this)" data-bs-toggle="collapse" data-bs-target="#projects-collapse"
+          aria-expanded="true">
+           Projects
+        </a>
+        <div class="collapse show" id="projects-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal small">
+            <li>
+              <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
+            </li>
+            <li>
+              <a href="lotus.html" class="sidebar-link project-link">Lotus</a>
+            </li>
+            <li>
+              <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
+            </li>
+            <li>
+              <a href="virtual-dystopia.html" class="sidebar-link project-link active">Virtual Dystopia</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="">
+        <a href="about.html" class="sidebar-link btn align-items-center " aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/person.svg#person" />
+          </svg>
+          About
+        </a>
+      </li>
+      <li class="">
+        <a href="resume.html" class="sidebar-link btn align-items-center " aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/file-earmark-text.svg#text-doc" />
+          </svg>
+          Resume
+        </a>
+      </li>
+      <li class="">
+        <a href="contact.html" class="sidebar-link btn align-items-center " aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/envelope.svg#envelope" />
+          </svg>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <div class="content-container" id="content-container">
+      <div class="middle-content">
+        <div style="max-width: 800px; margin: auto;">
+          <h1 style="display: inline; text-align: center;">Virtual Dystopia </h1> - A virtual reality project for the
+          google cardboard
+        </div>
+        <br><br>
+        <div class="pcard-container">
+          <img class="project-card vr-card" id="lr-card" src="../assets/vd-card.png" alt="Lost Reef card"></img>
+          <div>
+            <h5>Role(s)</h5>
+
+            <p>Everything (Solo Project)</p>
+            <h5>Software</h5>
+            <p>Unity, Maya, Fusion360, Photoshop</p>
+
+            <div class="project-links">
+              <a target="_blank" href="../assets/Virtual Dystopia.pdf"><button class="p-btn" style="height: 2.7em;">
+                  <!--href="https://github.com/Ruzzbug"-->
+                  <span>
+                    <svg class="icon" style="margin-top: -3%;">
+                      <use href="../assets/pdf.svg#pdf" />
+                    </svg>
+                    Full Report
+                  </span>
+                </button></a>
+              <a target="_blank"
+                href='https://play.google.com/store/apps/details?id=com.Ryan.Dystopia&hl=en&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+                  alt='Get it on Google Play' style="max-height: 4em; margin: -12.5px auto;"
+                  src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+
+            </div>
+            <sub>Not on IOS store as it cost money to put it there</sub>
+          </div>
+        </div>
+        <div style="max-width: 800px; margin: auto;">
+          <br>
+
+          The Virtual Dystopia app was made for the year 11 'Read To Write' English unit. Students, when using the
+          app, see what a character might within a dystopian environment. They will then write one of 3 pieces. Either
+          an informative piece about what happened to the world, a persuasivepiece about which road they will go down
+          and why, or a creative piece about how the character got to where they are. The immersion of the Virtual
+          Dystopia app should also help them better empathise with the characters and worlds they study in the Read to
+          Write: Dystopia unit.
+        </div>
+
+        <div style="max-width: 800px; margin: 20px auto; text-align: center; display: flex; flex-shrink: 1; ">
+          <iframe width="800" height="450" src="https://www.youtube.com/embed/t9SDo7YEkt0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <div style="max-width: 800px; margin: auto;">
+          <p>
+            What went well - Visual style, optimisation, functionality, accessibility<br><br>
+            What could have been done better - More elements to see. I ran out of time doing this project, more elements
+            and points of interest would have been good to further flesh out environment and give the students more to
+            work with in their responses or narratives.
+          </p>
+          <p>
+          <h6>Features</h6>
+          Virtual Reality - Immersive
+          Heavily optimised - Low battery use and can run well on any device
+          Free for Schools and Students
+          Encourages Creativity
+          Gives the Student a Choice
+          </p>
+          <p>
+          <h6>References</h6>
+          See full documentation
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
 
 
 
@@ -121,6 +197,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
+
   </main>
   <script src="../scripts/scripts.js"></script>
 </body>
