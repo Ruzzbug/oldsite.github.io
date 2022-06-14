@@ -109,6 +109,8 @@
     overflow-y: auto;
     height: fit-content;
   }
+
+
   .content-container {
     padding-top: 5vh;
     height: fit-content;
@@ -123,7 +125,9 @@
     margin: auto;
     padding: 0 15px 0 15px;
   }
-
+.middle-content {
+  max-height: none;
+}
   .bottom-line {
     width: 90%;
     margin-top: 5px;
@@ -143,6 +147,7 @@
 
   .project-cards-holder {
     height: auto;
+    max-height: none;
   }
 }
 /* asd */
