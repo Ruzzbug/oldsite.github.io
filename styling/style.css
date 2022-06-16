@@ -127,7 +127,15 @@ main {
   background-color: transparent;
 }
 
+#extras {
+  margin-top: -30px;
+}
 
+@media screen and (max-width: 1366px) { 
+  #extras {
+    margin-top: 20px;
+  }
+}
 
 @media screen and (max-width: 1280px) {
   .content-container {
@@ -137,6 +145,12 @@ main {
     margin: 0 auto;
     overflow-y: auto;
     padding-top: 80px;
+  }
+
+  
+  
+  .resume-container {
+    margin: auto 5%;
   }
 
   main {
@@ -202,7 +216,9 @@ a.active{
     /* padding: 40px 80px 0 80px;
     max-width: 1300px;
     overflow-y: auto; */
-  }
+  } 
+
+  
 
   main{
     padding-left: 0;
