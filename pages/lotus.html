@@ -10,6 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="../styling/style.css" rel="stylesheet">
   <link href="../styling/sidebar.css" rel="stylesheet">
+  <link href="../styling/projects.css" rel="stylesheet">
   <title>Ryan Van Dyk</title>
 </head>
 
@@ -17,103 +18,197 @@
 <body>
   <div class="navTog closed" id="navTog" href="javascript:void(0)" onclick="toggleNav()"></div>
 
-    <!-- sidebar -->
-    <nav class="sidebar" id="sidebar">
+  <!-- sidebar -->
+  <nav class="sidebar" id="sidebar">
 
-      <!-- profile -->
-      <div class="sidebar-profile">
-        <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
-        <div><b>Ryan Van Dyk</b></div>
-        <div>VR/UX/3D/Code</div>
-        <div class="social-container d-flex">
-          <div class="socials d-flex">
-            <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
-              <svg class="icon">
-                <use href="../assets/linkedin.svg#linkedin" />
-              </svg>
-            </a>
-            <a href="https://github.com/Ruzzbug" target="_blank">
-              <svg class="icon">
-                <use href="../assets/github.svg#github" />
-              </svg>
-            </a>
-            <a href="https://www.behance.net/ryanvandyk" target="_blank">
-              <svg class="icon">
-                <use href="../assets/behance.svg#behance" />
-              </svg>
-            </a>
-          </div>
-
+    <!-- profile -->
+    <div class="sidebar-profile">
+      <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
+      <div><b>Ryan Van Dyk</b></div>
+      <div>VR/UX/3D/Code</div>
+      <div class="social-container d-flex">
+        <div class="socials d-flex">
+          <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
+            <svg class="icon">
+              <use href="../assets/linkedin.svg#linkedin" />
+            </svg>
+          </a>
+          <a href="https://github.com/Ruzzbug" target="_blank">
+            <svg class="icon">
+              <use href="../assets/github.svg#github" />
+            </svg>
+          </a>
+          <a href="https://www.behance.net/ryanvandyk" target="_blank">
+            <svg class="icon">
+              <use href="../assets/behance.svg#behance" />
+            </svg>
+          </a>
         </div>
 
       </div>
-      <!-- links -->
-      <ul class="list-unstyled nav-link-list">
-        <li class="">
-          <a href="home.html" class="sidebar-link btn align-items-center" aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/home.svg#home" />
-            </svg>
-            Home
-          </a>
-        </li>
 
-        <li class="side-dropdown">
-          <a class="sidebar-link btn btn-toggle align-items-center collapsed" id="side-dropdown-toggle"
-            onclick="sideTransition(this)" data-bs-toggle="collapse" data-bs-target="#projects-collapse"
-            aria-expanded="true">
-             Projects
-          </a>
-          <div class="collapse show" id="projects-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal small">
-              <li>
-                <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
-              </li>
-              <li>
-                <a href="lotus.html" class="sidebar-link project-link active">Lotus</a>
-              </li>
-              <li>
-                <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
-              </li>
-              <li>
-                <a href="virtual-dystopia.html" class="sidebar-link project-link">Virtual Dystopia</a>
-              </li>
-            </ul>
-          </div>
-        </li>
+    </div>
+    <!-- links -->
+    <ul class="list-unstyled nav-link-list">
+      <li class="">
+        <a href="home.html" class="sidebar-link btn align-items-center" aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/home.svg#home" />
+          </svg>
+          Home
+        </a>
+      </li>
 
-        <li class="">
-          <a href="about.html" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/person.svg#person" />
-            </svg>
-            About
-          </a>
-        </li>
-        <li class="">
-          <a href="resume.html" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/file-earmark-text.svg#text-doc" />
-            </svg>
-            Resume
-          </a>
-        </li>
-        <li class="">
-          <a href="contact.html" class="sidebar-link btn align-items-center " aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/envelope.svg#envelope" />
-            </svg>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <li class="side-dropdown">
+        <a class="sidebar-link btn btn-toggle align-items-center collapsed" id="side-dropdown-toggle"
+          onclick="sideTransition(this)" data-bs-toggle="collapse" data-bs-target="#projects-collapse"
+          aria-expanded="true">
+           Projects
+        </a>
+        <div class="collapse show" id="projects-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal small">
+            <li>
+              <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
+            </li>
+            <li>
+              <a href="lotus.html" class="sidebar-link project-link active">Lotus</a>
+            </li>
+            <li>
+              <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
+            </li>
+            <li>
+              <a href="virtual-dystopia.html" class="sidebar-link project-link">Virtual Dystopia</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="">
+        <a href="about.html" class="sidebar-link btn align-items-center " aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/person.svg#person" />
+          </svg>
+          About
+        </a>
+      </li>
+      <li class="">
+        <a href="resume.html" class="sidebar-link btn align-items-center " aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/file-earmark-text.svg#text-doc" />
+          </svg>
+          Resume
+        </a>
+      </li>
+      <li class="">
+        <a href="contact.html" class="sidebar-link btn align-items-center " aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/envelope.svg#envelope" />
+          </svg>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <main>
-
     <div class="content-container" id="content-container">
-      <h1>LOTUS</h1>
+      <div class="middle-content">
+        <h1 style="display: inline;">Lotus </h1> - Keeping the elderly connected<br><br>
+        <div class="pcard-container">
+          <img class="project-card vr-card" id="lr-card" src="../assets/lotus-card.png" alt="lotus card"></img>
+          <div>
+            <h5>Role(s)</h5>
+
+            <p>User research, Product design, CAD, Physical Production, Testing</p>
+            <h5>Software</h5>
+            <p>Figma, Google Forms, Fusion 360, Blender</p>
+            <div class="project-links">
+              <a target="_blank" href="https://www.behance.net/gallery/140724043/lotus"
+                style="max-width:none; width: 159px">
+                <button class="p-btn" style="max-width:none; width: 100%;">
+                  <!--href="https://github.com/Ruzzbug"-->
+                  <svg class="icon">
+                    <use href="../assets/behance.svg#behance" />
+                  </svg>
+                  Full Docs
+                </button></a>
+            </div>
+          </div>
+        </div>
+        <div style="max-width: 800px; margin: auto;">
+          <br>
+          Lotus is for keeping elderly connected
+        </div>
+
+
+        <div id="myCarousel" class="carousel slide my-4" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="../assets/lt-pics/Lotuses.jpg" alt="Reef">
+            </div>
+            
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div style="max-width: 800px; margin: auto;">
+          <p>
+            What went well - Affordances, physical product, app<br><br>
+            What could have been done better - Full network integration
+          </p>
+          <p>
+          <h6>My contributions</h6>
+              > Created all shaders, interactable via code<br>
+              > 3D Modelling<br>
+              > Designed user interactions and user experience<br>
+              > Helped design the feel and atmosphere of the experience<br>
+          </p>
+          <p>
+          <h6>Features</h6>
+          <b>Virtual reality</b> <br>
+              > Immersive environment <br>
+              > Designed for google vr design guidelines <br>
+          <b>Stylised visuals</b> <br>
+              > Optimized for Oculus Quest 2 wireless performance <br>
+              > Reflection and water surface shaders <br>
+              > Models add environment complexity <br>
+          <b>User experience</b> <br>
+              > Menus (start, pause, options) <br>
+              > Boat crash event <br>
+              > Experience can be replayed after finishing <br>
+          </p>
+          <p>
+          <h6>Credits</h6>
+          Aidan Walbran - Programmer, Interaction Designer, Experience Designer <br>
+          Mustafa Aqil - Sound Designer, Modeling, User Testing <br>
+          James Newton - Sketching, Level Designer, User Testing</p>
+        </div>
+
+      </div>
+
     </div>
+
 
 
 
@@ -121,6 +216,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
+
   </main>
   <script src="../scripts/scripts.js"></script>
 </body>
