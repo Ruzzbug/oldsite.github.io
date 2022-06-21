@@ -19,6 +19,8 @@
   /* White and blue */
   --primary: 250, 249, 247;
   --secondary: 194, 194, 194;
+ 
+  /* --tertiary:123, 187, 251; */
   --tertiary: 79, 161, 244;
   --hover: 25, 81, 138;
   --accent: 83, 83, 83;
@@ -186,7 +188,7 @@ a:link {
 
 a.active{
   /* text-decoration: underline; */
-  background-color: #00000022;
+  background-color: #ffffff44;
 }
 
 .middle-content {
