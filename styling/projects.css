@@ -35,8 +35,8 @@
     flex-wrap: wrap;
     gap: 10px;
     font-size: larger;
-    
 }
+
 
 .project-links a .p-btn{
     margin-right:0;
@@ -53,6 +53,10 @@
     /* width: fit-content; */
     /* max-width: 550px; */
     height: 40px;
+}
+
+.project-links a .p-btn:hover{
+  box-shadow: 0 0 3px 1px rgba(var(--accent), 0.8);
 }
 
 .project-links .icon{
