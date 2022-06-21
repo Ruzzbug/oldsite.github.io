@@ -17,7 +17,6 @@ let open = false;
 
   //DELETE UNFINISHED SIDEBAR ELEMENTS
   document.getElementById("about-lnk").remove();
-  document.getElementById("contact-lnk").remove();
 })();
 
 //Change colour on dropdown
