@@ -8,10 +8,16 @@ let open = false;
   tooltipTriggerList.forEach(function (tooltipTriggerEl) {
     new bootstrap.Tooltip(tooltipTriggerEl);
   });
+
+  //Expand projects sidebar element if in project page
   let sidebarToggle = document.getElementById("side-dropdown-toggle");
   if (sidebarToggle.ariaExpanded === "true") {
     sidebarToggle.parentNode.style.backgroundColor = "rgb(var(--accent))";
   }
+
+  //DELETE UNFINISHED SIDEBAR ELEMENTS
+  document.getElementById("about-lnk").remove();
+  document.getElementById("contact-lnk").remove();
 })();
 
 //Change colour on dropdown
@@ -29,7 +35,6 @@ function sideTransition(element) {
 function toggleNav() {
   if (open) {
     document.getElementById("sidebar").style.removeProperty("width");
-    console.log("REMOVE")
     document.getElementById("content-container").style.filter = "none";
     document.body.style.backgroundColor = "rgb(var(--primary))";
     document.getElementById("navTog").classList.remove("opened");

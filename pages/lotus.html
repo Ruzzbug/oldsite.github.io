@@ -83,24 +83,24 @@
         </div>
       </li>
 
-      <li class="">
-        <a href="about.html" class="sidebar-link btn align-items-center " aria-current="page">
+      <li class="" id="about-lnk">
+        <a href="about.html" class="sidebar-link btn align-items-center" aria-current="page">
           <svg class="bi me-2 sideico">
             <use href="../assets/person.svg#person" />
           </svg>
           About
         </a>
       </li>
-      <li class="">
-        <a href="resume.html" class="sidebar-link btn align-items-center " aria-current="page">
+      <li class="" id="resume-lnk">
+        <a href="resume.html" class="sidebar-link btn align-items-center" aria-current="page">
           <svg class="bi me-2 sideico">
             <use href="../assets/file-earmark-text.svg#text-doc" />
           </svg>
           Resume
         </a>
       </li>
-      <li class="">
-        <a href="contact.html" class="sidebar-link btn align-items-center " aria-current="page">
+      <li class="" id="contact-lnk">
+        <a href="contact.html" class="sidebar-link btn align-items-center" aria-current="page">
           <svg class="bi me-2 sideico">
             <use href="../assets/envelope.svg#envelope" />
           </svg>
@@ -110,7 +110,7 @@
     </ul>
   </nav>
 
-  <main>
+  <main style="background-color: rgb(231, 178, 171);">
     <div class="content-container" id="content-container">
       <div class="middle-content">
         <h1 style="display: inline;">Lotus </h1> - Keeping the elderly connected<br><br>
@@ -137,7 +137,15 @@
         </div>
         <div style="max-width: 800px; margin: auto;">
           <br>
-          Lotus is for keeping elderly connected
+          <p><b>Project Goal:</b> Facilitate a simple interaction between families and their elderly family members, through an
+          interaction for the elderly. A non-obtrusive solution that fits into daily life seamlessly and with minimal
+          effort on the part of the users. With a consideration of the great digital divide between low and high
+          socioeconomic societies (Kowsalya, B. & Sundara Raj, T), it’s essential to design an affordable solution that
+          is accessible to all.</p>
+
+          <p>Lotus aims to reduce the feeling of self isolation, promoting interactions that strengthen relationships rather
+          than those which require initiating new ones. We’re providing a way to engage with their families to remain
+          happy, healthy and connected.</p>
         </div>
 
 
@@ -157,13 +165,35 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="../assets/lt-pics/Lotuses.jpg" alt="Reef">
+              <img class="d-block w-100" src="../assets/lt-pics/lotuses.webp" alt="3 Lotus stages, waiting, done, recieved">
             </div>
-            
-            
+            <div class="carousel-item">
+              <video class="d-block w-100" style="height: 500px;" autoplay loop> 
+                <source src="../assets/lt-pics/lt-turn.mp4" type="video/mp4" >
+                Lotus spin
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-auto" src="../assets/lt-pics/lt-rear.png" alt="3 Lotus stages, waiting, done, recieved">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-auto" src="../assets/lt-pics/lt-p1.jpg" alt="3 Lotus stages, waiting, done, recieved">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-auto" src="../assets/lt-pics/lt-p2.jpg" alt="3 Lotus stages, waiting, done, recieved">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-auto" src="../assets/lt-pics/lt-p3.jpg" alt="3 Lotus stages, waiting, done, recieved">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-auto" src="../assets/lt-pics/lt-p4.jpg" alt="3 Lotus stages, waiting, done, recieved">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-auto" src="../assets/lt-pics/lt-p5.jpg" alt="3 Lotus stages, waiting, done, recieved">
+            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
@@ -179,30 +209,31 @@
           </p>
           <p>
           <h6>My contributions</h6>
-              > Created all shaders, interactable via code<br>
-              > 3D Modelling<br>
-              > Designed user interactions and user experience<br>
-              > Helped design the feel and atmosphere of the experience<br>
+              > Physical Device Modelling and Fabrication<br>
+              > Design<br>
+              > UI and UX<br>
+              > User research<br>
+              > Research<br>
           </p>
           <p>
           <h6>Features</h6>
-          <b>Virtual reality</b> <br>
-              > Immersive environment <br>
-              > Designed for google vr design guidelines <br>
-          <b>Stylised visuals</b> <br>
-              > Optimized for Oculus Quest 2 wireless performance <br>
-              > Reflection and water surface shaders <br>
-              > Models add environment complexity <br>
-          <b>User experience</b> <br>
-              > Menus (start, pause, options) <br>
-              > Boat crash event <br>
-              > Experience can be replayed after finishing <br>
+          <b>Simple</b> <br>
+              > Two controls <br>
+              > Included instruction sticker <br>
+          <b>Physical Device Unnecessary</b> <br>
+              > App only if required <br>
+              > Accessible anywhere <br>
+              > App has extended features <br>
+          <b>Keeps Connected</b> <br>
+              > Keeps connected and creates conversation <br>
           </p>
           <p>
           <h6>Credits</h6>
-          Aidan Walbran - Programmer, Interaction Designer, Experience Designer <br>
-          Mustafa Aqil - Sound Designer, Modeling, User Testing <br>
-          James Newton - Sketching, Level Designer, User Testing</p>
+          Eva Lui - UI/UX, Research<br>
+          Lilian Trieu - UI/UX, Branding<br>
+          Aaron Ngo - UI/UX, App development<br>
+          Dhanita Listra - UI/UX, App development<br>
+        </p>
         </div>
 
       </div>
