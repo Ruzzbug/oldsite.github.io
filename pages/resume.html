@@ -17,97 +17,98 @@
 <body>
   <div class="navTog closed" id="navTog" href="javascript:void(0)" onclick="toggleNav()"></div>
 
-    <!-- sidebar -->
-    <nav class="sidebar" id="sidebar">
+  <!-- sidebar -->
+  <nav class="sidebar" id="sidebar">
 
-      <!-- profile -->
-      <div class="sidebar-profile">
-        <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
-        <div><b>Ryan Van Dyk</b></div>
-        <div>VR/UX/3D/Code</div>
-        <div class="social-container d-flex">
-          <div class="socials d-flex">
-            <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
-              <svg class="icon">
-                <use href="../assets/linkedin.svg#linkedin" />
-              </svg>
-            </a>
-            <a href="https://github.com/Ruzzbug" target="_blank">
-              <svg class="icon">
-                <use href="../assets/github.svg#github" />
-              </svg>
-            </a>
-            <a href="https://www.behance.net/ryanvandyk" target="_blank">
-              <svg class="icon">
-                <use href="../assets/behance.svg#behance" />
-              </svg>
-            </a>
-          </div>
-
+    <!-- profile -->
+    <div class="sidebar-profile">
+      <img class="round-picture" src="../assets/profile.jpg" style="width:180px;height:180px;">
+      <div><b>Ryan Van Dyk</b></div>
+      <div>VR/UX/3D/Code</div>
+      <div class="social-container d-flex">
+        <div class="socials d-flex">
+          <a href="https://www.linkedin.com/in/ryan-van-dyk-a69009147/" target="_blank">
+            <svg class="icon">
+              <use href="../assets/linkedin.svg#linkedin" />
+            </svg>
+          </a>
+          <a href="https://github.com/Ruzzbug" target="_blank">
+            <svg class="icon">
+              <use href="../assets/github.svg#github" />
+            </svg>
+          </a>
+          <a href="https://www.behance.net/ryanvandyk" target="_blank">
+            <svg class="icon">
+              <use href="../assets/behance.svg#behance" />
+            </svg>
+          </a>
         </div>
 
       </div>
-      <!-- links -->
-      <ul class="list-unstyled nav-link-list">
-        <li class="">
-          <a href="home.html" class="sidebar-link btn align-items-center" aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/home.svg#home" />
-            </svg>
-            Home
-          </a>
-        </li>
 
-        <li class="side-dropdown">
-          <a class="sidebar-link btn btn-toggle align-items-center collapsed" id="side-dropdown-toggle"
-            onclick="sideTransition(this)" data-bs-toggle="collapse" data-bs-target="#projects-collapse"
-            aria-expanded="false">
-             Projects
-          </a>
-          <div class="collapse" id="projects-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal small">
-              <li>
-                <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
-              </li>
-              <li>
-                <a href="lotus.html" class="sidebar-link project-link">Lotus</a>
-              </li>
-              <li>
-                <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
-              </li>
-              <li>
-                <a href="virtual-dystopia.html" class="sidebar-link project-link">Virtual Dystopia</a>
-              </li>
-            </ul>
-          </div>
-        </li>
+    </div>
+    <!-- links -->
+    <ul class="list-unstyled nav-link-list">
+      <li class="">
+        <a href="home.html" class="sidebar-link btn align-items-center" aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/home.svg#home" />
+          </svg>
+          Home
+        </a>
+      </li>
 
-        <li class="" id="about-lnk">
-          <a href="about.html" class="sidebar-link btn align-items-center" aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/person.svg#person" />
-            </svg>
-            About
-          </a>
-        </li>
-        <li class="" id="resume-lnk">
-          <a href="resume.html" class="sidebar-link btn align-items-center active" aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/file-earmark-text.svg#text-doc" />
-            </svg>
-            Resume
-          </a>
-        </li>
-        <li class="" id="contact-lnk">
-          <a target="_blank" href="../assets/Ryan Van Dyk CV.pdf" class="sidebar-link btn align-items-center" aria-current="page">
-            <svg class="bi me-2 sideico">
-              <use href="../assets/envelope.svg#envelope" />
-            </svg>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <li class="side-dropdown">
+        <a class="sidebar-link btn btn-toggle align-items-center collapsed" id="side-dropdown-toggle"
+          onclick="sideTransition(this)" data-bs-toggle="collapse" data-bs-target="#projects-collapse"
+          aria-expanded="false">
+           Projects
+        </a>
+        <div class="collapse" id="projects-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal small">
+            <li>
+              <a href="lost-reef.html" class="sidebar-link project-link">Lost Reef</a>
+            </li>
+            <li>
+              <a href="lotus.html" class="sidebar-link project-link">Lotus</a>
+            </li>
+            <li>
+              <a href="acorn.html" class="sidebar-link project-link">Acorn Maze Game</a>
+            </li>
+            <li>
+              <a href="virtual-dystopia.html" class="sidebar-link project-link">Virtual Dystopia</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="" id="about-lnk">
+        <a href="about.html" class="sidebar-link btn align-items-center" aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/person.svg#person" />
+          </svg>
+          About
+        </a>
+      </li>
+      <li class="" id="resume-lnk">
+        <a href="resume.html" class="sidebar-link btn align-items-center active" aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/file-earmark-text.svg#text-doc" />
+          </svg>
+          Resume
+        </a>
+      </li>
+      <li class="" id="contact-lnk">
+        <a target="_blank" href="../assets/Ryan Van Dyk CV.pdf" class="sidebar-link btn align-items-center"
+          aria-current="page">
+          <svg class="bi me-2 sideico">
+            <use href="../assets/envelope.svg#envelope" />
+          </svg>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <main>
 
@@ -115,14 +116,22 @@
       <span class="general-text">
         <h1>RESUME</h1>
         <h4>PROFILE</h4>
-        Completed the Bachelor of Design Computing in 2021 at Sydney University. Developed skills in object oriented programming across a variety of languages - including JS, Java, and Python - Unity, Unreal Engine, UI, UX, front-end web dev, graphic design, film, photo, media creation and editing. I have a keen interest in VR, XR and ways to incorporate digital innovation into real-world experiences.
+        Graduated University of Sydney Bachelor of Design Computing, 2022. Developed skills in; Object oriented
+        programming across a variety of languages (JS, Java, Python and more), Unity, Unreal Engine, UI, UX, front-end
+        web dev, graphic design, film, photo, media creation and editing. I have a keen interest in VR, XR and ways to
+        incorporate digital innovation into real-world experiences.
         <br><br>
-        I have professional 3D generalist experience, have run a FIRST robotics team, am a lead mentor at TinkerTank, a STEAM makerspace for school age students. I have experience developing VR applications for Quest 2 and google cardboard. 
-
+        I have professional 3D generalist experience, tutor XR at USYD, am a lead mentor at TinkerTank, a STEAM
+        makerspace for school age students, and coached two FIRST robotics teams. I have experience developing VR
+        applications for Quest 2 and google cardboard.
         <br><br>
-        I initially started building my skills in programming, and 3D digital development as a hobby in high school. Since then I have received a national FIRST Lego League innovation award and won the NSW award for the best Senior Student Project at the iAwards in 2019, hosted by the Australian Information Industry Association (AIIA). Both projects incorporated VR into learning.
+        I initially started building my skills in programming, and 3D digital development as a hobby in high school.
+        Since then I have received a national FIRST Lego League innovation award and won the NSW award for the best
+        Senior Student Project at the iAwards in 2019, hosted by the Australian Information Industry Association (AIIA).
+        Both projects incorporated VR into learning, see them on my website.
         <br><br>
-        Through University some of the projects and case studies I did included: UX, VR, Interaction Design, Human Centered Design, Animation, Webdev, Digital Media Production, OOP, Systems programming (in C), Models of Computation.
+        University projects and case studies included: UX, VR, Interaction Design, Human Centered Design, Animation,
+        Webdev, Digital Media Production, OOP, Systems programming (in C), Models of Computation.
 
         <br><br>
       </span>
@@ -167,7 +176,7 @@
             <li>UI/UX</li>
           </ul>
         </span>
-        
+
       </div>
 
       <div class="general-text" id="extras">
